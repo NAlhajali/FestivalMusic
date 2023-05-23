@@ -1,0 +1,56 @@
+@use 'variables' as v;
+
+html {
+    font-size: 62.5%; // esto hace que 1 rem sean 10 px
+    box-sizing: border-box; 
+    scroll-behavior: smooth;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: v.$fuente_principal; 
+    font-size: 1.6rem;
+
+    &.fijar-body { // pa no dar scroll cuando esta abirta img de galeria
+        overflow: hidden;
+    }
+
+    &.body-scroll { // posicion fija de la nevagcion para el scroll smoth
+        padding-top: 8.6rem;
+    }
+}
+
+p{
+    font-size: 2rem; // tamano de letra parrafos
+    color: v.$negro; // color de letra parrafos
+    line-height: 1.5; // interlineado
+}
+.contenedor {
+    width: 95%;
+    margin: 120rem;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+h1, h2, h3 {
+    margin: 0 0 5rem 0;
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3.6rem;
+}
+h3 {
+    font-size: 3rem;
+}
+img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+}
